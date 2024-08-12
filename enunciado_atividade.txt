@@ -1,0 +1,38 @@
+Olá, estudante!
+
+Nesta trilha você teve a oportunidade compreender os conceitos básicos de um framework para desenvolvimento de software e exercitar as funções básicas do framework Flask. Sendo assim, daremos início a atividade proposta. Leia atentamente as orientações e critérios de avaliação.
+
+Nesta disciplina nós vamos desenvolver um sistema para uma plataforma de e-commerce que deve conter basicamente:
+
+    O sistema possui diversos usuários, que podem anunciar ou comprar produtos;
+    Cada usuário possui diversos anúncios;
+    Os anúncios estão organizados em categorias;
+    Os usuários podem realizar perguntas nos anúncios;
+    O usuário proprietário do anúncio pode responder uma pergunta;
+    Os usuários podem realizar compras de um anúncio (não existe carrinho de compras);
+    Os usuários podem criar listas de anúncios favoritos;
+    Os usuários podem consultar o seu relatório de vendas;
+    Os usuários podem consultar o seu relatório de compras.
+
+    Apresente a sua proposta de Modelo Entidade Relacionamento – MER para o desenvolvimento do sistema de e-Commerce;
+    Apresente a sua proposta de estrutura de sistema com um diagrama de acesso às funções via Menu da sua plataforma;
+    Publique o código-fonte do seu projeto Flask, desenvolvido até agora, em um repositório do GitHub. Indique o endereço de acesso ao código-fonte nesta entrega. A data de publicação do código-fonte no GitHub deve respeitar a data de entrega desta atividade na plataforma AVA.
+
+
+Gere um arquivo PDF com as informações solicitadas e envie nesta atividade.
+
+
+Critérios de avaliação:
+
+    Apresentar proposta de Modelo Entidade Relacionamento (MER) para o desenvolvimento do sistema de e-commerce;
+    Apresentar proposta de estrutura de sistema com diagrama de acesso às funções via menu;
+    Publicar código-fonte em um repositório do Github;
+    Descrever argumentos que justifiquem suas ações e propostas com base nas aulas apresentadas.
+
+
+Observação: esta atividade é individual. Em caso de identificação de plágio a atividade receberá nota 0, não sendo possível realizá-la em outra oportunidade.
+
+
+Nota máxima: 1,5.
+
+Prazo: 04/08 às 23:59.
