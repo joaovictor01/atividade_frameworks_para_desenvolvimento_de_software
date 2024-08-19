@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head> 
+    <title>BBB - Comprar e vender - Cadastro de {{titulo}}</title>
+</head>
+
+<body>
+    <h4>Cadastro de {{titulo}}</h4>
+    <form action="/anuncio/criar" method="post">
+        <p><label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"></p>
+
+        <p><label for="descricao">Desc</label>
+        <textarea rows="4" cols="50" id="descricao" name="descricao"></textarea></p>       
+
+        <p><label for="quantidade">Quantidade</label>
+        <input type="text" id="quantidade" name="quantidade"></p>
+
+        <p><label for="preco">Preco</label>
+        <input type="text" id="preco" name="preco"></p>
+        
+        <p><label for="categoria">Categoria</label>
+        <select id="categoria" name="categoria">
+            {% for categoria in categorias %} 
+                <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
+            {% endfor %}
+        </select></p>
+
+        <p><label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario"></p>
+
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+
+    <h4>Lista de {{titulo}}</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for anuncio in anuncios %}
+                <tr>
+                    <td>{{ anuncio.nome }}</td>
+                    <td>{{ anuncio.descricao }}</td>
+                    <td>{{ anuncio.quantidade }}</td>
+                    <td>{{ anuncio.preco }}</td>
+                    <td>{{ anuncio.categoria_id }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
+
