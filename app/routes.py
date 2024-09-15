@@ -9,8 +9,8 @@ app = create_app()
 
 
 @app.errorhandler(404)
-def paginanaoencontrada(error):
-    return render_template("pagnaoencontrada.html")
+def page_not_found(error):
+    return render_template("page_404.html")
 
 
 @app.route("/")
