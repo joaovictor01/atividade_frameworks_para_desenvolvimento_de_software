@@ -38,7 +38,7 @@ class Anuncio(db.Model):
     categoria_id = db.Column("categoria_id", db.Integer, db.ForeignKey("categoria.id"))
     usuario_id = db.Column("usuario_id", db.Integer, db.ForeignKey("usuario.id"))
     data_criacao = db.Column(
-        "data_criacao", db.DateTime, default=datetime.utcnow(), nullable=False
+        "data_criacao", db.DateTime, default=datetime.datetime.utcnow(), nullable=False
     )
 
     def __init__(
