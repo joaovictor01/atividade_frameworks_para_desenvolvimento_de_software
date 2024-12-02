@@ -1,4 +1,3 @@
-from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask import Flask
 from config import Config
@@ -6,8 +5,8 @@ from flask import redirect, url_for
 from flask import render_template
 from flask import request
 from models import Usuario, Categoria, Anuncio
+from extensions import db
 
-db = SQLAlchemy()
 migrate = Migrate()
 
 app = Flask(__name__)
