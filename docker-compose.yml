@@ -9,9 +9,9 @@ services:
       - app
     ports:
       - "80:80"
-  
+
   app:
-    build: ./flask
+    build: ./web
     container_name: "app"
     expose:
       - 8080
@@ -24,7 +24,7 @@ services:
       - db
     restart: always
     volumes:
-      - "./flask:/app"
+      - "./web:/app"
   db:
     image: mysql:8.0
     container_name: db
