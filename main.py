@@ -128,7 +128,7 @@ def categoria():
 
 @app.route("/categoria/criar", methods=["POST"])
 def criar_categoria():
-    categoria = Categoria(request.form.get("nome"), request.form.get("desc"))
+    categoria = Categoria(request.form.get("nome"), request.form.get("descricao"))
     db.session.add(categoria)
     db.session.commit()
     return redirect(url_for("categoria"))
