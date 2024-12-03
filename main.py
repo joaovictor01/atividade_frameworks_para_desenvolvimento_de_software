@@ -83,6 +83,7 @@ def anuncio():
         "anuncio.html",
         anuncios=Anuncio.query.all(),
         categorias=Categoria.query.all(),
+        usuarios=Usuario.query.all(),
         titulo="Anuncio",
     )
 

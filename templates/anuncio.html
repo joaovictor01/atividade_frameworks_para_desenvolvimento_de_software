@@ -46,7 +46,12 @@
   
         <div class="form-group">
           <label for="usuario">Usuario</label>
-          <input class="form-control" type="text" id="usuario" name="usuario" />
+          <!-- <input class="form-control" type="text" id="usuario" name="usuario" /> -->
+          <select class="form-control" id="usuario" name="usuario">
+          {% for usuario in usuarios %}
+            <option value="{{ usuario.id }}">{{ usuario.nome }}</option>
+          {% endfor %}
+          </select>
         </div>
   
         <button class="btn btn-success" type="submit" value="Cadastrar">Cadastrar</button>
